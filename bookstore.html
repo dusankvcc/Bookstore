@@ -15,7 +15,9 @@
     
 
 
-    <title>CogitoNexus</title>
+    <title>Cogito Nexus™</title>
+    <link rel="icon" type="image/svg+xml" href="images/cogito-nexus.svg">
+
 
 </head>
 
@@ -24,22 +26,31 @@
    
     
     
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black !important;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000 !important;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Cogito Nexus</a>
+          <img src="images/cogito-nexus.svg" width="40" height="40">
+          <a class="navbar-brand" href="#" style="margin-left: 20px;">Cogito Nexus</a>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: right; ">
             <ul class="navbar-nav">
+
+              <form class="d-flex">
+                <div class="search-box">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>
+                  </button>
+                </div>
+              </form>
+              
+              
+
+
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,7 +63,7 @@
                   <li><a class="dropdown-item" href="#">Romance</a></li>
                   <li><a class="dropdown-item" href="#">Science Fiction</a></li>
                   <li><a class="dropdown-item" href="#">Horror</a></li>
-                  <li><a class="dropdown-item" href="#">Children’s Fiction</a></li>
+                  <li><a class="dropdown-item" href="#">Childrens Fiction</a></li>
                   <li><a class="dropdown-item" href="#">Biography and Autobiography</a></li>
                   <li><a class="dropdown-item" href="#">Self-Help</a></li>
                   <li><a class="dropdown-item" href="#">Health and Wellness</a></li>
@@ -63,12 +74,16 @@
                   <li><a class="dropdown-item" href="#">Business and Economics</a></li>
                 </ul>
               </li>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                </svg></button>
-              </form>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              
+              
+             
+              
               <!-- <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li> -->
@@ -77,19 +92,66 @@
         </div>
       </nav>
 
+      <header>
 
+        
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="ci1" style="background-image: url('images/header-slide7.png')">
+              <div class="carousel-caption">
+                <h3 class="landing-text">"The mystery of human existence. <br>Lies not in just staying alive, but in finding something to live for."</h3>
+                <h4 class="landing-text">Fyodor Dostoevsky, from "The Brothers Karamazov"</h4>
+              </div>
+            </div>
+            <div class="carousel-item" id="ci2" style="background-image: url('images/header-slide5.png')">
+              <div class="carousel-caption">
+                <h3 class="landing-text">"Man is what he believes.<br>A reflection on the power of belief and identity."</h3>
+                <h4 class="landing-text">Anton Chekhov</h4>
+              </div>
+            </div>
+            <div class="carousel-item" id="ci3" style="background-image: url('images/header-slide6.png')">
+              <div class="carousel-caption">
+                <h3 class="landing-text">"In the middle of difficulty lies opportunity.<br>A reminder to find hope in challenging times."</h3>
+                <h4 class="landing-text">Albert Einstein</h4>
+              </div>
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+        <div class="container-slogan" style="margin-top: 100px;">
+          <h1>Nurturing Minds, One Book at a Time.</h1>
+          <h5>Cogito Nexus Team</h5>
+        </div>
+
+      </header>
 
 
    
     <main>
-
+      <div class="global-container" style="margin-top: 150px;">
 
         <section class="book-slider">
             <h2 class="title">Books</h2>
           <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel"  data-interval="8000">
             <div class="carousel-inner">
               <div class="carousel-item active">
-
+                <div class="book-wrapper">
 
                 <article class="book">
                     <h3>Book Title</h3>
@@ -126,10 +188,13 @@
                     <p>Description of Book</p>
                     <p>Price</p>
                 </article>
-              </div>
+                
+               </div>
+             </div>
 
-
+             
               <div class="carousel-item">
+                <div class="book-wrapper">
                 <article class="book">
                     <h3>Book Title</h3>
                     
@@ -166,10 +231,11 @@
                     <p>Price</p>
                 </article>
               </div>
-
+            </div>
             
+
               <div class="carousel-item">
-                
+                <div class="book-wrapper">
                 <article class="book">
                     <h3>Book Title</h3>
                     
@@ -206,7 +272,7 @@
                     <p>Price</p>
                 </article>
               </div>
-
+              </div>
             </div>
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
@@ -223,12 +289,12 @@
 
 
         <section class="book-slider">
-            <h2 class="title">Classic's</h2>
+            <h2 class="title">Classics</h2>
           <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel"  data-interval="8000">
             <div class="carousel-inner">
               <div class="carousel-item active">
 
-
+                <div class="book-wrapper">
                 <article class="book">
                     <h3>Book Title</h3>
                     
@@ -265,9 +331,10 @@
                     <p>Price</p>
                 </article>
               </div>
-
+              </div>
 
               <div class="carousel-item">
+                <div class="book-wrapper">
                 <article class="book">
                     <h3>Book Title</h3>
                     
@@ -304,10 +371,10 @@
                     <p>Price</p>
                 </article>
               </div>
-
+            </div>
             
               <div class="carousel-item">
-                
+                <div class="book-wrapper">
                 <article class="book">
                     <h3>Book Title</h3>
                   
@@ -344,7 +411,7 @@
                     <p>Price</p>
                 </article>
               </div>
-
+              </div>
             </div>
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
@@ -369,7 +436,7 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
 
-
+                <div class="book-wrapper">
                 <article class="book">
                     <h3>Book Title</h3>
                     
@@ -406,9 +473,10 @@
                     <p>Price</p>
                 </article>
               </div>
-
+            </div>
 
               <div class="carousel-item">
+                <div class="book-wrapper">
                 <article class="book">
                     <h3>Book Title</h3>
                    
@@ -445,10 +513,10 @@
                     <p>Price</p>
                 </article>
               </div>
-
+              </div>
             
               <div class="carousel-item">
-                
+                <div class="book-wrapper">
                 <article class="book">
                     <h3>Book Title</h3>
                   
@@ -485,7 +553,7 @@
                     <p>Price</p>
                 </article>
               </div>
-
+              </div>
             </div>
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
@@ -499,7 +567,7 @@
             </div>
         </section> 
 
-
+      </div>
 
 
 

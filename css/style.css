@@ -8,14 +8,14 @@
 
 body {
     font-family: 'Merriweather', sans-serif;
-    background-color: #afafaf;
+    background-color: #000000;
     color: #dfdfdf;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #1a1a1a;
+    background-color: #000000;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -45,90 +45,48 @@ nav a:hover {
 }
 
 main {
+    
     background-color: #000000;
     padding: 20px;
 }
-/* .book-slider{
-    margin-bottom: 90px;
-}
-.book-slider {
-    
-    text-align: center;
-    margin: 20px 0;
-    margin-bottom: 70px;
-  
-}
 
-.book-slider h2 {
-    margin-bottom: 20px;
-} */
 .title{
     font-family: 'Merriweather', sans-serif;
     color: #fff !important;
 }
 
-/* .book-slider .carousel {
-    position: relative; 
-}
 
-.book-slider .carousel-inner {
-    display: flex;
-    align-items: center; 
-   
-}
-.carousel-inner .carousel-item.active {
-    display: flex;
-    
-  } 
-
-.carousel-inner .carousel-item {
-    
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ensure it takes the full width of the carousel 
-}
-
-.book-slider .carousel-item {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
-} */
 h2 {
     color: white;
     text-align: center; /* Center text */
     margin: 0 auto; /* Zero margin on top and bottom, auto margin on left and right */
     width: fit-content; /* Optional: Adjust width to fit content */
 }
-
+h1,h2,h3,h4,h5{
+    font-family: 'Merriweather', sans-serif;
+}
 .book {
     font-family: 'Merriweather', sans-serif;
     width: 180px;
     height: 240px;
     padding: 10px;
     color: rgb(209, 209, 209);
-    border: 1px solid rgb(39, 39, 39);
-    /* -moz-box-shadow: 7px 7px 6px -4px rgba(46, 46, 46, 0.71);
-box-shadow: 7px 7px 6px -4px rgba(51, 51, 51, 0.71); */
-    /* box-shadow: 0px 0px 8px #000000; */
     text-align: left;
     margin: 10px;
     flex: 0 0 auto;
-    
-    background-image: url("../images/book1.jpg");
+
+    background-image: url("../images/book2.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
-/* .book-slider{
-    padding: 10px;
-    margin: 0 10px;
-    flex: 0 0 auto;
-}
-.book-slider .carousel-item {
-    display: flex; 
+.book-wrapper{
+    display: flex;
     justify-content: center;
-  } */
+}
+.book-slider{
+    padding-bottom: 60px;
+}
 
 .carousel-control-prev, .carousel-control-next {
     color: #b4b4b4;
@@ -181,14 +139,19 @@ box-shadow: 7px 7px 6px -4px rgba(51, 51, 51, 0.71); */
     color: #eeeeee !important; /* Replace with your desired color */
 }
 .form-control{
+    
     background-color: black !important;
     color: white !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }
 .form-control :focus{
     color: white !important;
     background-color: black !important;
-    border-color: rgb(39, 39, 39) !important;
-    box-shadow: 0 0 0 0.25rem rgba(19, 19, 19, 0.25) !important;
+    /* box-shadow: none !important; */
+    /* border-color: rgb(39, 39, 39) !important; */
+    box-shadow: 0 0 0 0.25rem rgb(0, 0, 0) !important;
 }
 .form-control::placeholder {
     color: white !important;
@@ -196,10 +159,59 @@ box-shadow: 7px 7px 6px -4px rgba(51, 51, 51, 0.71); */
   
 .btn{
     
-    height: 40px;
-    width: 40px;
+    /* height: 40px;
+    width: 40px; */
     border: none !important;
+    color: rgb(255, 255, 255)!important;
     background-color: rgb(0, 0, 0) !important;
 
 }
-/* Customizing the navbar toggler icon color */
+/* SEARCH BAR CUSTOMS */
+.search-box {
+    margin-right: 90px !important;
+    display: flex !important; /* Enable flexbox layout */
+    align-items: center !important; /* Align items vertically in the center */
+}
+
+.search-box input,
+.search-box button {
+ 
+    flex: 1 !important; /* Allows the input and button to share the available space */
+}
+
+.search-box button {
+    flex-grow: 0 !important; /* Prevents the button from growing */
+    margin-left: -1px !important; /* Removes gap between input and button */
+}
+#navbarNav {
+   
+    display: flex !important; 
+    flex-direction: column !important; 
+    align-items: flex-end !important; 
+    height: 100% !important; 
+}
+#ci1, #ci2, #ci3, #ci4 {
+    height: 90vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.dropdown-menu{
+    background-color: black !important;
+    
+}
+.dropdown-item{
+    color: white !important;
+    
+}
+.dropdown-item:hover{
+    color: rgb(255, 224, 224) !important;
+    background-color: #141414 !important;
+    
+}
+.landing-text{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.979);
+}
