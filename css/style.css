@@ -1,66 +1,142 @@
 @font-face {
     font-family: 'Merriweather';
     src: url('/fonts/Merriweather-Black.ttf') format('truetype');
-    font-weight: normal; /* Font weight */
-    font-style: normal; /* Font style */
+    font-weight: normal; 
+    font-style: normal; 
 }
 
 
 body {
     font-family: 'Merriweather', sans-serif;
-    background-color: #000000;
+    background-color: #000000 !important;
     color: #dfdfdf;
     margin: 0;
     padding: 0;
 }
-
 header {
     background-color: #000000;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
+main {
+    background-color: #000000;
+    padding: 20px;
+}
 
+/* NAVBAR CUSTOMS */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 nav ul li {
     display: inline;
     margin-right: 20px;
 }
-
 nav a {
     font-family: 'Merriweather', sans-serif;
-
     color: #111111;
     text-decoration: none;
     font-weight: bold;
 }
-
 nav a:hover {
     text-decoration: underline;
 }
-
-main {
-    
-    background-color: #000000;
-    padding: 20px;
+.navbar .navbar-brand {
+    pointer-events: none;
 }
+.navbar .nav-link {
+    text-decoration: none;
+} 
+.navbar {
+    background-color: #070707 !important; 
+}
+.navbar .navbar-nav .nav-link {
+    color: #eeeeee !important; 
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #eeeeee !important; 
+}
+.navbar .navbar-brand {
+    color: #eeeeee !important; 
+}
+.form-control{
+    
+    background-color: black !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+.form-control :focus{
+    color: white !important;
+    background-color: black !important;
+    /* box-shadow: none !important; */
+    /* border-color: rgb(39, 39, 39) !important; */
+    box-shadow: 0 0 0 0.25rem rgb(0, 0, 0) !important;
+}
+.form-control::placeholder {
+    color: white !important;
+  }
+#navbarNav {
+   
+    display: flex !important; 
+    flex-direction: column !important; 
+    align-items: flex-end !important; 
+    height: 100% !important; 
+}
+.dropdown-menu{
+    background-color: black !important;
+    
+}
+.dropdown-item{
+    color: white !important;
+    
+}
+.dropdown-item:hover{
+    color: rgb(255, 224, 224) !important;
+    background-color: #141414 !important;
+    
+}
+.btn{
+    /* height: 40px;
+    width: 40px; */
+    border: none !important;
+    color: rgb(255, 255, 255)!important;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+/* SEARCH BAR CUSTOMS */
+
+
+.search-box {
+    margin-right: 90px !important;
+    display: flex !important;
+    align-items: center !important; 
+}
+.search-box input,
+.search-box button {
+     flex: 1 !important; 
+}
+.search-box button {
+    flex-grow: 0 !important;
+    margin-left: -1px !important; 
+}
+
+
+/* BOOK & CAROUSEL CUSTOMS */
 
 .title{
     font-family: 'Merriweather', sans-serif;
     color: #fff !important;
 }
-
-
 h2 {
     color: white;
-    text-align: center; /* Center text */
-    margin: 0 auto; /* Zero margin on top and bottom, auto margin on left and right */
-    width: fit-content; /* Optional: Adjust width to fit content */
+    text-align: center; 
+    margin: 0 auto; 
+    width: fit-content; 
 }
 h1,h2,h3,h4,h5{
     font-family: 'Merriweather', sans-serif;
@@ -87,7 +163,6 @@ h1,h2,h3,h4,h5{
 .book-slider{
     padding-bottom: 60px;
 }
-
 .carousel-control-prev, .carousel-control-next {
     color: #b4b4b4;
     text-shadow: none;
@@ -110,86 +185,8 @@ h1,h2,h3,h4,h5{
     }
 }
 
+/* LANDING PAGE CUSTOMS */
 
-.navbar .navbar-brand {
-    pointer-events: none;
-}
-
-.navbar .nav-link {
-    text-decoration: none;
-} 
-
-/* Customizing the navbar background color */
-.navbar {
-    background-color: #070707 !important; /* Replace with your desired color */
-}
-
-/* Customizing the navbar link colors */
-.navbar .navbar-nav .nav-link {
-    color: #eeeeee !important; /* Replace with your desired color */
-}
-
-/* Customizing the navbar link hover state */
-.navbar .navbar-nav .nav-link:hover {
-    color: #eeeeee !important; /* Replace with your desired color */
-}
-
-/* Customizing the navbar brand color */
-.navbar .navbar-brand {
-    color: #eeeeee !important; /* Replace with your desired color */
-}
-.form-control{
-    
-    background-color: black !important;
-    color: white !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-}
-.form-control :focus{
-    color: white !important;
-    background-color: black !important;
-    /* box-shadow: none !important; */
-    /* border-color: rgb(39, 39, 39) !important; */
-    box-shadow: 0 0 0 0.25rem rgb(0, 0, 0) !important;
-}
-.form-control::placeholder {
-    color: white !important;
-  }
-  
-.btn{
-    
-    /* height: 40px;
-    width: 40px; */
-    border: none !important;
-    color: rgb(255, 255, 255)!important;
-    background-color: rgb(0, 0, 0) !important;
-
-}
-/* SEARCH BAR CUSTOMS */
-.search-box {
-    margin-right: 90px !important;
-    display: flex !important; /* Enable flexbox layout */
-    align-items: center !important; /* Align items vertically in the center */
-}
-
-.search-box input,
-.search-box button {
- 
-    flex: 1 !important; /* Allows the input and button to share the available space */
-}
-
-.search-box button {
-    flex-grow: 0 !important; /* Prevents the button from growing */
-    margin-left: -1px !important; /* Removes gap between input and button */
-}
-#navbarNav {
-   
-    display: flex !important; 
-    flex-direction: column !important; 
-    align-items: flex-end !important; 
-    height: 100% !important; 
-}
 #ci1, #ci2, #ci3, #ci4 {
     height: 90vh;
     min-height: 350px;
@@ -199,19 +196,71 @@ h1,h2,h3,h4,h5{
     -o-background-size: cover;
     background-size: cover;
 }
-.dropdown-menu{
-    background-color: black !important;
-    
-}
-.dropdown-item{
-    color: white !important;
-    
-}
-.dropdown-item:hover{
-    color: rgb(255, 224, 224) !important;
-    background-color: #141414 !important;
-    
-}
 .landing-text{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.979);
+}
+
+/* FOOTER CUSTOMS */
+
+footer { 
+    font-family: 'Merriweather', sans-serif;
+    margin-top: 30vh;
+    height: 40vh;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Styles for List Titles */
+ul.list-unstyled li:first-child {
+    font-size: 21px; /* Size of the list title */
+    font-weight: bold; /* Bold for emphasis */
+    margin-bottom: 15px; /* Spacing after the title */
+    color: #ffffff; /* Color of the list title */
+}
+
+/* Styles for List Items */
+ul.list-unstyled li {
+    font-size: 16px; /* Smaller text size for list items */
+    padding-bottom: 8px; /* Reduced padding between list items */
+}
+
+/* Social Icons and Pointer Styles */
+.fa, .cursor-pointer {
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.fa {
+    font-size: 21px;
+    margin: 5px 10px;
+}
+
+/* Positioning for Social Icons */
+.social {
+    position: relative;
+    left: -10px;
+}
+
+/* Adjusted Padding for Footer Sections */
+div.col-md-3 {
+    padding-left: 30px; /* Slight rightward shift */
+}
+
+/* Utility Class for Removing Padding */
+.pb-0 {
+    padding-bottom: 0 !important;
+    background-color: black !important;
+}
+.bottom-bar{
+    font-family: 'Merriweather', sans-serif;
+    font-size: 10px;
+    
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-top: 50px;
+    flex-direction: column; /* Stacks the items vertically */
+    text-align: center; 
+    bottom: 10px;
 }
