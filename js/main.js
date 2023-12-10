@@ -12,10 +12,10 @@ function closeModal() {
 }
 
 // Adding event listener to the button for opening the modal
-var loginButton = document.getElementById('navbtn');
+var loginButton = document.getElementById('signInBtn');
 loginButton.addEventListener('click', openModal);
 // Adding event listener to the button for opening the modal
-var signupButton = document.getElementById('navbtn1');
+var signupButton = document.getElementById('signUpBtn');
 signupButton.addEventListener('click', openModal);
 
 // Optional: Close the modal if the user clicks outside of it
@@ -27,15 +27,17 @@ window.onclick = function(event) {
 
 
 
+ 
+const signUpBtn = document.getElementById('signUpBtn');
+const signInBtn = document.getElementById('signInBtn');
 
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+signUpBtn.addEventListener('click', showSignUp); 
+signInBtn.addEventListener('click', showSignIn);
 
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
-
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
+function showSignUp() {
+    container.classList.add('right-panel-active');  
+  }
+  
+  function showSignIn() {
+     container.classList.remove('right-panel-active');
+  }

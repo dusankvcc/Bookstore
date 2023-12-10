@@ -35,7 +35,7 @@
             <!-- Logo and Brand Name -->
             <div class="d-flex align-items-center">
                 <img src="images/cogito-nexus.svg" width="40" height="40">
-                <a class="navbar-brand" href="#" style="margin-left: 20px;">Cogito Nexus</a>
+                <a  id="CogitoNexus" class="navbar-brand" href="#" style="margin-left: 20px;">Cogito Nexus</a>
             </div>
     
             <!-- Toggler Button -->
@@ -87,8 +87,8 @@
                     <a  class="nav-link" href="#">About us</a>
                   </li>
                   <li class="nav-item">
-                    <button type="button" id="navbtn" class="btnnav btn " data-mdb-ripple-init>Login</button>
-                    <button type="button" id="navbtn1" class="btnnav btn btn-dark" data-mdb-ripple-init>Sign up</button>
+                    <button type="button" id="signInBtn" class="btnnav btn " data-mdb-ripple-init>Sign in</button>
+                    <button type="button" id="signUpBtn" class="btnnav btn btn-dark" data-mdb-ripple-init>Sign up</button>
                   </li>
                   <!-- <li class="nav-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-bookmark-heart" viewBox="0 0 16 16">
@@ -170,22 +170,22 @@
 
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form action="includes/signup.inc.php" method="post">
 			<h1>Create Account</h1>
 			
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+			
+			<input type="text" name="username" placeholder="Username" required/>
+			<input type="email" name="email" placeholder="Email" required />
+			<input type="password" name="password" placeholder="Password" required/>
 			<button>Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="includes/login.inc.php" method="post">
 			<h1 class="form-title">Sign in</h1>
 			
-			<input type="email" name="email" placeholder="Email" />
-			<input type="password" name="pwd" placeholder="Password" />
+			<input type="text" name="username" placeholder="Username" required/>
+			<input type="password" name="password" placeholder="Password" required/>
 			<a class="fpwd" href="#">Forgot your password?</a>
 			<button>Sign In</button>
 		</form>

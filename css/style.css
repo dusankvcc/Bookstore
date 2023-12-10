@@ -59,7 +59,14 @@ nav a:hover {
     text-decoration: none;
 } 
 .navbar {
+
     background-color: #070707 !important; 
+    position: fixed !important; /* Changed to fixed */
+     top: 0 !important; 
+     left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    
 }
 .navbar .navbar-nav .nav-link {
     color: #eeeeee !important; 
@@ -71,7 +78,9 @@ nav a:hover {
 .navbar .navbar-brand {
     color: #eeeeee !important; 
 }
-
+#CogitoNexus{
+    font-family: 'Merriweather', sans-serif !important;
+}
 .form-control{
     
     background-color: black !important;
@@ -99,8 +108,19 @@ nav a:hover {
 }
 .dropdown-menu{
     background-color: black !important;
-    
+    display: block;
+    max-height: 400px;
+    overflow-y: auto;
 }
+.dropdown-menu::-webkit-scrollbar {
+    width: 8px;
+    background: #000000; 
+  }
+  
+  .dropdown-menu::-webkit-scrollbar-thumb {
+    background: #A4D4B4;
+    border-radius: 4px;
+  }
 .dropdown-item{
     color: white !important;
     
@@ -111,7 +131,7 @@ nav a:hover {
     
 }
 
-#navbtn{
+#signInBtn {
 
     height: 30px;
     width: 75px;
@@ -121,7 +141,7 @@ nav a:hover {
     color: rgb(255, 255, 255) !important;
     background-color: rgb(0, 0, 0) !important;
 }
-#navbtn1{
+#signUpBtn {
 
     height: 30px;
     width: 75px;
@@ -131,7 +151,7 @@ nav a:hover {
     color: rgb(255, 255, 255) !important;
     background-color: rgb(0, 0, 0) !important;
 }
-#navbtn:hover{
+#signInBtn:hover{
 
     height: 30px;
     width: 75px;
@@ -141,7 +161,7 @@ nav a:hover {
     color: rgb(0, 0, 0) !important;
     background-color: #A4D4B4 !important;
 }
-#navbtn1:hover{
+#signUpBtn :hover{
 
     height: 30px;
     width: 75px;
@@ -334,7 +354,7 @@ div.col-md-3 {
     height: 550px !important;
     width: 1100px !important;
     display: flex !important;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -457,15 +477,18 @@ input:focus {
     color: white ;
     margin-left: 65% !important;
 }
+.sign-up-container{
+    background-color: red !important;
+}
 .container {
     font-family: 'Satoshi', sans-serif !important;
-    background-image: url("../images/form-signin.png") !important;
+    background-image: url("../images/form-signinsignup.png") !important;
     background-repeat: no-repeat !important;
     background-size: contain !important;
     background-position: center !important;
 
     color: white !important;
-	background-color: #000000;
+	background-color: #00000000;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
@@ -568,6 +591,13 @@ input:focus {
 .container.right-panel-active .overlay-right {
 	transform: translateX(20%);
 }
-
+.right-panel-active .sign-up-container {
+    transform: translateX(100%);  
+  }
+  
+  .right-panel-active .sign-in-container {
+    transform: translateX(100%);
+    opacity: 1;
+  }
 
 }

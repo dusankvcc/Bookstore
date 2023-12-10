@@ -25,7 +25,6 @@ session_set_cookie_params([
   'httponly' => true,
 ]);
 
-session_start();
 
 if(isset($_SESSION["user_id"])){
 
