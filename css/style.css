@@ -346,7 +346,7 @@ div.col-md-3 {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
 .modal-content {
@@ -601,3 +601,18 @@ input:focus {
   }
 
 }
+
+/* LOGIN - SIGNUP FORMS AND SESSION CUSTOMS */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  

@@ -11,7 +11,7 @@ function processLogin($username, $password) {
 
         if ($isValid) {
             $_SESSION['success'] = "Logged in successfully!";
-            session_start();
+            // session_start();
             return true; // The user was successfully logged in
         } else {
             return false; // The login attempt was unsuccessful

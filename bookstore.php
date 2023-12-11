@@ -24,6 +24,12 @@
 
 <body>
 
+<?php
+var_dump($_SESSION['data']);
+echo '<script> sessionStorage.setItem("data", "' . json_encode($_SESSION['data'])  . '");</script>';
+
+
+?>
    
     
     
